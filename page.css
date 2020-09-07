@@ -228,6 +228,42 @@ nav .cart i{
     font-weight: 800;
     letter-spacing: 1px;
 }
+
+.about{
+    width:100%;
+    height:auto;
+    background-color:#E8ECED ;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.about .about-desc{
+    flex-basis: 50%;
+    text-align: center;
+}
+.about .about-desc h2{
+    background: linear-gradient(to right,#5E5C57,#C4C0B5);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+    font-weight: 900;
+    letter-spacing: 1px;
+    margin:10px 0px;
+}
+.about .about-desc p{
+    color:#5E5C57;
+    padding:10px;
+}
+.about .about-img{
+    width:50%;
+    height: auto;
+}
+.about .about-img img{
+    width:100%;
+    height: auto;
+}
+
+
 .brands{
     height:auto;
     width:100%;
@@ -235,6 +271,7 @@ nav .cart i{
     color:#555657;
     letter-spacing: 1px;
     font-weight: 900;
+    margin:100px auto;
 }
 .brands .brand{
     display:flex;
@@ -246,7 +283,7 @@ nav .cart i{
 
 .brands .brand .laptop{
     content: "";
-    width:250px;
+    width:30%;
     height:auto;
     margin:10px auto;
     flex-shrink: 0;
@@ -254,8 +291,14 @@ nav .cart i{
 }
 .brands .brand .laptop img{
     content: "";
-    width:30%;
-    height:150px;
+    width:50%;
+    height:250px;
+    margin:10px auto;
+}
+.brands .brand .laptop img:hover{
+    content: "";
+    width:80%;
+    height:250px;
     margin:10px auto;
 }
 
@@ -272,6 +315,19 @@ nav .cart i{
     }
     .presentation .laptop-image{
         width: 100%;
+    }
+    .about{
+        flex-direction: column;
+        justify-content: center;
+        margin:auto;
+    }
+    .about .about-img{
+        width:100%;
+        height: auto;
+    }
+    .about .about-img img{
+        width:100%;
+        height: auto;
     }
 }
 @media screen and (max-width:800px){
